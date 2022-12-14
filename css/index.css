@@ -3,9 +3,11 @@
 body {
   --main-font-family: "Roboto", sans-serif;
   --primary-color: #212121;
+  --dark-background-color: #2f303a;
 }
 
 .logo {
+  color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -15,6 +17,15 @@ body {
 
 .logo-span {
   color: #2196f3;
+}
+
+.footer-logo {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
 }
 
 .menu {
@@ -38,4 +49,94 @@ body {
 .menu-contact a:focus,
 .menu-contact a:hover {
   color: #2196f3;
+}
+
+.main-section {
+  font-family: var(--main-font-family);
+  background-color: var(--dark-background-color);
+}
+
+h1 {
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.ordering-button {
+  background: #2196f3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.our-assets-section {
+  font-family: var(--main-font-family);
+  color: var(--primary-color);
+}
+
+.our-assets-section h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+.our-assets-section p {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-cards {
+  font-family: var(--main-font-family);
+}
+.team-cards h3 {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-cards p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.footer {
+  font-family: var(--main-font-family);
+  background-color: var(--dark-background-color);
+}
+
+.footer li {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+
+.address {
+  color: #ffffff;
+}
+
+.footer-contact {
+  color: #ffffff99;
 }
