@@ -2,11 +2,15 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
+
 body {
   --main-font-family: "Roboto", sans-serif;
   --primary-color: #212121;
+  --secondary-color: #757575;
   --dark-background-color: #2f303a;
+  --grey-backgroud-color: #f5f4fa;
 }
 
 .logo {
@@ -40,17 +44,18 @@ body {
 }
 
 .menu-nav {
-  color: #212121;
+  color: var(--primary-color);
 }
 
 .menu-contact {
-  color: #757575;
+  color: var(--secondary-color);
 }
 
 .menu-nav a:hover,
 .meun-nav a:focus,
-.menu-contact a:focus,
-.menu-contact a:hover {
+.menu-nav a:active .menu-contact a:focus,
+.menu-contact a:hover,
+.menu-contact a:active {
   color: #2196f3;
 }
 
@@ -68,12 +73,14 @@ h1 {
 }
 
 .ordering-button {
+  font-family: var(--main-font-family);
   background: #2196f3;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .our-assets-section {
@@ -92,7 +99,7 @@ h1 {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color);
 }
 
 h2 {
@@ -101,6 +108,10 @@ h2 {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.our-team {
+  background-color: var(--grey-backgroud-color);
 }
 
 .team-cards {
@@ -121,7 +132,7 @@ h2 {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color);
 }
 
 .footer {
@@ -138,12 +149,45 @@ h2 {
 
 .address {
   color: #ffffff;
+  font-style: normal;
 }
 
 .footer-contact {
-  color: #ffffff99;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Portfolio styles */
+
+.portfolio {
+  font-family: var(--main-font-family);
+  color: var(--primary-color);
 }
 
 .filter-buttons button {
   cursor: pointer;
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-projects h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-projects p {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+  letter-spacing: 0.03em;
 }
