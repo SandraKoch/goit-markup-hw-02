@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 
+a {
+  text-decoration: none;
+}
 body {
   --main-font-family: "Roboto", sans-serif;
   --primary-color: #212121;
@@ -139,4 +142,8 @@ h2 {
 
 .footer-contact {
   color: #ffffff99;
+}
+
+.filter-buttons button {
+  cursor: pointer;
 }
