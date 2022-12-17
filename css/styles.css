@@ -183,6 +183,10 @@ body {
 
 /* Portfolio styles */
 
+.filters {
+  list-style: none;
+}
+
 .filters__button {
   cursor: pointer;
   font-weight: 500;
