@@ -13,13 +13,6 @@ body {
   font-family: var(--main-font-family);
 }
 
-/*klasa nadana dla zresetowania defaultowych właściwości linków, tj. podkreślenie, kolor*/
-
-.link {
-  text-decoration: none;
-  color: inherit;
-}
-
 .logo {
   color: #000000;
   font-family: "Raleway", sans-serif;
@@ -40,6 +33,11 @@ body {
   font-size: 26px;
   line-height: 1.19; /*31px*/
   letter-spacing: 0.03em;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .page-header {
@@ -67,9 +65,9 @@ body {
   color: var(--secondary-color);
 }
 
-.nav-contact:focus,
-.nav-contact:hover,
-.nav-contact:active {
+.nav-contact__item:focus,
+.nav-contact__item:hover,
+.nav-contact__item:active {
   color: #2196f3;
 }
 
