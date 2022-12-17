@@ -11,36 +11,56 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="menu">
+    <header class="page-header">
       <div class="logo">
-        <a class="link" href="./index.html"><span class="logo-span">Web</span>Studio</a>
+        <a class="link" href="./index.html"
+          ><span class="logo__span">Web</span>Studio</a
+        >
       </div>
-      <nav class="menu menu-nav">
+      <nav class="navigation">
         <ul>
-          <li><a class="link" href="./index.html">Agencja</a></li>
-          <li><a class="link" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="link" href="">Kontakt</a></li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="./index.html">Agencja</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Kontakt</a>
+          </li>
         </ul>
       </nav>
-      <ul class="menu menu-contact">
-        <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="link" href="tel:+48111111111">+48 111 111 111</a></li>
+      <ul class="nav-contact">
+        <li class="nav-contact__item">
+          <a class="link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="nav-contact__item">
+          <a class="link" href="tel:+48111111111">+48 111 111 111</a>
+        </li>
       </ul>
     </header>
     <main>
-      <section class="portfolio">
-        <ul class="filter-buttons">
-          <li><button type="button">Wszystkie</button></li>
-          <li><button type="button">Strony</button></li>
-          <li><button type="button">Aplikacje</button></li>
-          <li><button type="button">Dizajn</button></li>
-          <li><button type="button">Marketing</button></li>
-        </ul>
-        <ul class="portfolio-projects">
+      <section>
+        <ul class="filters">
           <li>
+            <button class="filters__button" type="button">Wszystkie</button>
+          </li>
+          <li><button class="filters__button" type="button">Strony</button></li>
+          <li>
+            <button class="filters__button" type="button">Aplikacje</button>
+          </li>
+          <li><button class="filters__button" type="button">Dizajn</button></li>
+          <li>
+            <button class="filters__button" type="button">Marketing</button>
+          </li>
+        </ul>
+        <ul class="portfolio">
+          <li class="project">
             <figure>
               <img
                 src="./images/portfolio/img(1).jpg"
@@ -49,13 +69,13 @@
                 height="294"
               />
               <figcaption>
-                <h3>Technocrack</h3>
-                <p>Strona internetowa</p>
+                <h3 class="project__name">Technocrack</h3>
+                <p class="project__description">Strona internetowa</p>
               </figcaption>
             </figure>
           </li>
 
-          <li>
+          <li class="project">
             <figure>
               <img
                 src="./images/portfolio/img(2).jpg"
@@ -64,13 +84,13 @@
                 height="294"
               />
               <figcaption>
-                <h3>Grafika New Orlean vs Golden Star</h3>
-                <p>Dizajn</p>
+                <h3 class="project__name">Grafika New Orlean vs Golden Star</h3>
+                <p class="project__description">Dizajn</p>
               </figcaption>
             </figure>
           </li>
 
-          <li>
+          <li class="project">
             <figure>
               <img
                 src="./images/portfolio/img(3).jpg"
@@ -79,13 +99,13 @@
                 height="294"
               />
               <figcaption>
-                <h3>Restauracja Seafood</h3>
-                <p>Aplikacja</p>
+                <h3 class="project__name">Restauracja Seafood</h3>
+                <p class="project__description">Aplikacja</p>
               </figcaption>
             </figure>
           </li>
 
-          <li>
+          <li class="project">
             <figure>
               <img
                 src="./images/portfolio/img(4).jpg"
@@ -94,13 +114,13 @@
                 height="294"
               />
               <figcaption>
-                <h3>Projekt Prime</h3>
-                <p>Marketing</p>
+                <h3 class="project__name">Projekt Prime</h3>
+                <p class="project__description">Marketing</p>
               </figcaption>
             </figure>
           </li>
 
-          <li>
+          <li class="project">
             <figure>
               <img
                 src="./images/portfolio/img(5).jpg"
@@ -109,13 +129,13 @@
                 height="294"
               />
               <figcaption>
-                <h3>Projekt Boxes</h3>
-                <p>Aplikacja</p>
+                <h3 class="project__name">Projekt Boxes</h3>
+                <p class="project__description">Aplikacja</p>
               </figcaption>
             </figure>
           </li>
 
-          <li>
+          <li class="project">
             <figure>
               <img
                 src="./images/portfolio/img(6).jpg"
@@ -124,13 +144,13 @@
                 height="294"
               />
               <figcaption>
-                <h3>Inspiration has no Borders</h3>
-                <p>Strona internetowa</p>
+                <h3 class="project__name">Inspiration has no Borders</h3>
+                <p class="project__description">Strona internetowa</p>
               </figcaption>
             </figure>
           </li>
 
-          <li>
+          <li class="project">
             <figure>
               <img
                 src="./images/portfolio/img(7).jpg"
@@ -139,13 +159,13 @@
                 height="294"
               />
               <figcaption>
-                <h3>Magazyn Limited Edition</h3>
-                <p>Dizajn</p>
+                <h3 class="project__name">Magazyn Limited Edition</h3>
+                <p class="project__description">Dizajn</p>
               </figcaption>
             </figure>
           </li>
 
-          <li>
+          <li class="project">
             <figure>
               <img
                 src="./images/portfolio/img(8).jpg"
@@ -154,13 +174,13 @@
                 height="294"
               />
               <figcaption>
-                <h3>Projekt LAB</h3>
-                <p>Marketing</p>
+                <h3 class="project__name">Projekt LAB</h3>
+                <p class="project__description">Marketing</p>
               </figcaption>
             </figure>
           </li>
 
-          <li>
+          <li class="project">
             <figure>
               <img
                 src="./images/portfolio/img(9).jpg"
@@ -169,8 +189,8 @@
                 height="294"
               />
               <figcaption>
-                <h3>Growing Business</h3>
-                <p>Aplikacja</p>
+                <h3 class="project__name">Growing Business</h3>
+                <p class="project__description">Aplikacja</p>
               </figcaption>
             </figure>
           </li>
@@ -179,16 +199,18 @@
     </main>
     <footer class="footer">
       <div class="footer-logo">
-        <a class="link" href="./index.html"><span class="logo-span">Web</span>Studio</a>
+        <a class="link" href="./index.html"
+          ><span class="footer-logo__span">Web</span>Studio</a
+        >
       </div>
-      <ul>
-        <li>
-          <a class="link"ddress class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
+      <ul class="footer-contact">
+        <li class="footer-contact__item">
+          <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
         </li>
-        <li class="footer-contact">
+        <li class="footer-contact__item">
           <a class="link" href="mailto:info@example.com">info@example.com</a>
         </li>
-        <li class="footer-contact">
+        <li class="footer-contact__item">
           <a class="link" href="tel:+48111111111">+48 111 111 111</a>
         </li>
       </ul>

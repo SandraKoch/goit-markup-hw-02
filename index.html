@@ -11,60 +11,74 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="menu">
+    <header class="page-header">
       <div class="logo">
-        <a class="link" href="./index.html"><span class="logo-span">Web</span>Studio</a>
+        <a class="link" href="./index.html"
+          ><span class="logo__span">Web</span>Studio</a
+        >
       </div>
-      <nav class="menu menu-nav">
+      <nav class="navigation">
         <ul>
-          <li><a class="link" href="./index.html">Agencja</a></li>
-          <li><a class="link" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="link" href="">Kontakt</a></li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="./index.html">Agencja</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">Kontakt</a>
+          </li>
         </ul>
       </nav>
-      <ul class="menu menu-contact">
-        <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="link" href="tel:+48111111111">+48 111 111 111</a></li>
+      <ul class="nav-contact">
+        <li class="nav-contact__item">
+          <a class="link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="nav-contact__item">
+          <a class="link" href="tel:+48111111111">+48 111 111 111</a>
+        </li>
       </ul>
     </header>
     <header class="main-section">
-      <h1>
+      <h1 class="main-section__headline">
         EFEKTYWNE ROZWIĄZANIA <br />
         DLA WASZEGO BIZNESU
       </h1>
-      <button type="button" class="ordering-button">Zamów usługę</button>
+      <button type="button" class="main-section__button">Zamów usługę</button>
     </header>
     <main>
-      <section class="our-assets-section">
+      <section>
         <div>
-          <ul>
-            <li>
-              <h3>LOREM IPSUM</h3>
-              <p>
+          <ul class="our-assets">
+            <li class="asset">
+              <h3 class="asset__name">LOREM IPSUM</h3>
+              <p class="asset__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
-              <h3>LOREM IPSUM</h3>
-              <p>
+            <li class="asset">
+              <h3 class="asset__name">LOREM IPSUM</h3>
+              <p class="asset__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
-              <h3>LOREM IPSUM</h3>
-              <p>
+            <li class="asset">
+              <h3 class="asset__name">LOREM IPSUM</h3>
+              <p class="asset__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
-              <h3>LOREM IPSUM</h3>
-              <p>
+            <li class="asset">
+              <h3 class="asset__name">LOREM IPSUM</h3>
+              <p class="asset__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
@@ -72,8 +86,8 @@
           </ul>
         </div>
         <div class="services">
-          <h2>Czym się zajmujemy</h2>
-          <ul>
+          <h2 class="services-headline">Czym się zajmujemy</h2>
+          <ul class="gallery">
             <li>
               <img
                 width="370"
@@ -102,10 +116,10 @@
         </div>
       </section>
       <section class="our-team">
-        <h2>Nasz zespół</h2>
+        <h2 class="our-team-headline">Nasz zespół</h2>
         <ul class="team-cards">
           <li>
-            <figure>
+            <figure class="card">
               <img
                 src="./images/person-1.jpg"
                 alt="Picture of John Doe"
@@ -113,13 +127,13 @@
                 height="260"
               />
               <figcaption>
-                <h3>John Doe</h3>
-                <p>Product Designer</p>
+                <h3 class="card__name">John Doe</h3>
+                <p class="card__description">Product Designer</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="card">
               <img
                 src="./images/person-2.jpg"
                 alt="Picture of John Doe"
@@ -127,13 +141,13 @@
                 height="260"
               />
               <figcaption>
-                <h3>John Doe</h3>
-                <p>Frontend Developer</p>
+                <h3 class="card__name">John Doe</h3>
+                <p class="card__description">Frontend Developer</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="card">
               <img
                 src="./images/person-3.jpg"
                 alt="Picture of John Doe"
@@ -141,13 +155,13 @@
                 height="260"
               />
               <figcaption>
-                <h3>John Doe</h3>
-                <p>Marketing</p>
+                <h3 class="card__name">John Doe</h3>
+                <p class="card__description">Marketing</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="card">
               <img
                 src="./images/person-4.jpg"
                 alt="Picture of John Doe"
@@ -155,8 +169,8 @@
                 height="260"
               />
               <figcaption>
-                <h3>John Doe</h3>
-                <p>UI Designer</p>
+                <h3 class="card__name">John Doe</h3>
+                <p class="card__description">UI Designer</p>
               </figcaption>
             </figure>
           </li>
@@ -165,16 +179,18 @@
     </main>
     <footer class="footer">
       <div class="footer-logo">
-        <a class="link" href="./index.html"><span class="logo-span">Web</span>Studio</a>
+        <a class="link" href="./index.html"
+          ><span class="footer-logo__span">Web</span>Studio</a
+        >
       </div>
-      <ul>
-        <li>
-          <a class="link"ddress class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
+      <ul class="footer-contact">
+        <li class="footer-contact__item">
+          <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
         </li>
-        <li class="footer-contact">
+        <li class="footer-contact__item">
           <a class="link" href="mailto:info@example.com">info@example.com</a>
         </li>
-        <li class="footer-contact">
+        <li class="footer-contact__item">
           <a class="link" href="tel:+48111111111">+48 111 111 111</a>
         </li>
       </ul>
