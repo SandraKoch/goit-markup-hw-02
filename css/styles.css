@@ -47,12 +47,13 @@ body {
   letter-spacing: 0.02em;
 }
 
-.navigation__item {
-  list-style: none;
-}
 .navigation__link {
   text-decoration: none;
   color: inherit;
+}
+
+.navigation__item {
+  list-style: none;
 }
 
 .navigation__item:hover,
